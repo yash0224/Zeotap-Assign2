@@ -1,26 +1,33 @@
-# Weather Monitor Application
+# Weather Alert Application
 
 ## Overview
-This distributed application uses the [Open Weather API](https://openweathermap.org/api) to deliver real-time, reliable weather information, including immediate alerts for extreme conditions, short-term forecasts, and long-term trends. To maintain data consistency and easy access, it utilizes [Docker](https://www.docker.com/) containers for deployment, [Kafka](https://kafka.apache.org/) for real-time data streaming, and a [Python](https://www.python.org/) pipeline to process weather data, which is stored in a [MongoDB](https://www.mongodb.com/) database for analysis.
+This project is a <a href="https://www.techtarget.com/searchitoperations/definition/distributed-applications-distributed-apps">distributed application</a> that uses the <a href="https://openweathermap.org/api"> Open Weather API </a> to provide accurate and up-to-date weather information to its users. The app will provide valuable information to users, such as forecasts for the near future, long-term weather trends, and immediate alerts in case of extreme weather conditions. To ensure data consistency and accessibility, we will deploy <a href="https://www.docker.com/">Docker</a> containers to run the web application and <a href="https://kafka.apache.org/"> Kafka </a> to handle real-time data streams. Additionally, we will use a <a href="https://www.python.org/">Python</a> pipeline to process the obtained weather data and save it to a <a href="https://www.mongodb.com/">Mongodb</a> database for future analysis.
 
-## Project Structure
-Using a combination of [Open Weather API](https://openweathermap.org/api), Python, Kafka, and MongoDB, this application builds a comprehensive machine learning pipeline for data collection, processing, analysis, visualization, and delivery. The pipeline gathers data with Open Weather API, processes and analyzes it with Python, stores it in MongoDB, and transmits updates to users through Kafka.
 
-## Manual Setup
-To skip manual configuration, you can use the [Docker setup](#docker-setup) below.
+ 
+  ## Project Map
+  
+Using <a href="https://openweathermap.org/api">Open Weather</a>, <a href="https://www.python.org/">Python</a>, <a href="https://kafka.apache.org/">Kafka</a>, and <a href="https://www.mongodb.com/">MongoDB</a> in combination, a comprehensive machine learning pipeline can be developed to gather, process, examine, visualize, and transmit data. Open Weather can be utilized to gather data, Python can be employed for analysis, and MongoDB can be utilized to store the data. Lastly, the data can be transmitted to users through Kafka, providing for their needs.
+ 
 
-### Steps
-1. Install [Node.js](https://nodejs.org/en/).
-2. Install [Python (>= 3.9)](https://www.python.org/).
-3. Install [Kafka](https://kafka.apache.org/).
-4. Install [MongoDB (6.0)](https://www.mongodb.com/).
-5. Install [VS Code](https://code.visualstudio.com/).
-6. In VS Code, add extensions: **Vetur, Better Comments, Docker, Python, GitHub Theme**.
-7. Clone this repository.
-8. Connect to MongoDB with:
-   ```bash
-   mongosh mongodb://localhost:27017
+ 
+ ## Manual Setup
 
+<blockquote> <p dir="auto">You can avoid this configurational step by using the <a href="#docker-setup">Docker installation process</a>.</p></blockquote>
+
+Perform the following steps:
+
+1- Download and install <a href="https://nodejs.org/en/">Node.js</a>.<br/>
+2- Download and install <a href="https://www.python.org/">Python (>= 3.9)</a>.<br/>
+3- Download and install <a href="https://nodejs.org/en/">Kafka</a>.<br/>
+4- Download and install <a href="https://www.mongodb.com/">Mongodb (6.0)</a>.<br/>
+5- Download and install <a href="https://kafka.apache.org/">Visual Studio Code(VS Code)</a>.<br/>
+6- Install <strong>Vetur, Better Comments, Docker, Python, GitHub Theme </strong> extensions for VS Code To enjoy the code.<br/>
+7- Clone this repository.<br/>
+8- Connect to the MongoDB 6.0 server by running the following command:
+
+```
+mongosh mongodb://localhost:27017
 ```
 9- Navigate to the Kafka installation directory using the "cd" command. For example, if you installed Kafka in "<strong>C:\kafka_2.13-2.8.1</strong>", type the following command and press enter:
 ```
@@ -94,5 +101,3 @@ Running the command will expose 7 services with the following ports:
 
 You can now access the server at http://localhost:8080/.
 
- 
- 
