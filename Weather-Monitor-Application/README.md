@@ -9,7 +9,9 @@ Using a combination of [Open Weather API](https://openweathermap.org/api), Pytho
 ## Manual Setup
 To skip manual configuration, you can use the [Docker setup](#docker-setup) below.
 
-### Steps
+
+Perform the following steps:
+
 1. Install [Node.js](https://nodejs.org/en/).
 2. Install [Python (>= 3.9)](https://www.python.org/).
 3. Install [Kafka](https://kafka.apache.org/).
