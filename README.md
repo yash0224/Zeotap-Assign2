@@ -1,13 +1,13 @@
 # Weather Alert Application
 
 ## Overview
-This project is a <a href="https://www.techtarget.com/searchitoperations/definition/distributed-applications-distributed-apps">distributed application</a> that uses the <a href="https://openweathermap.org/api"> Open Weather API </a> to provide accurate and up-to-date weather information to its users. The app will provide valuable information to users, such as forecasts for the near future, long-term weather trends, and immediate alerts in case of extreme weather conditions. To ensure data consistency and accessibility, we will deploy <a href="https://www.docker.com/">Docker</a> containers to run the web application and <a href="https://kafka.apache.org/"> Kafka </a> to handle real-time data streams. Additionally, we will use a <a href="https://www.python.org/">Python</a> pipeline to process the obtained weather data and save it to a <a href="https://www.mongodb.com/">Mongodb</a> database for future analysis.
+This distributed application uses the [Open Weather API](https://openweathermap.org/api) to deliver real-time, reliable weather information, including immediate alerts for extreme conditions, short-term forecasts, and long-term trends. To maintain data consistency and easy access, it utilizes [Docker](https://www.docker.com/) containers for deployment, [Kafka](https://kafka.apache.org/) for real-time data streaming, and a [Python](https://www.python.org/) pipeline to process weather data, which is stored in a [MongoDB](https://www.mongodb.com/) database for analysis.
 
 
  
   ## Project Map
   
-Using <a href="https://openweathermap.org/api">Open Weather</a>, <a href="https://www.python.org/">Python</a>, <a href="https://kafka.apache.org/">Kafka</a>, and <a href="https://www.mongodb.com/">MongoDB</a> in combination, a comprehensive machine learning pipeline can be developed to gather, process, examine, visualize, and transmit data. Open Weather can be utilized to gather data, Python can be employed for analysis, and MongoDB can be utilized to store the data. Lastly, the data can be transmitted to users through Kafka, providing for their needs.
+Using a combination of [Open Weather API](https://openweathermap.org/api), Python, Kafka, and MongoDB, this application builds a comprehensive machine learning pipeline for data collection, processing, analysis, visualization, and delivery. The pipeline gathers data with Open Weather API, processes and analyzes it with Python, stores it in MongoDB, and transmits updates to users through Kafka.
  
 
  
@@ -100,4 +100,3 @@ Running the command will expose 7 services with the following ports:
 </ul>
 
 You can now access the server at http://localhost:8080/.
-
